@@ -23,6 +23,10 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
+import anvil from "./company/anvil.png";
+import icpc from "./company/icpc.jpeg";
+import purdue from "./company/purdue.png";
+import nsf from "./company/nsf.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
@@ -53,7 +57,11 @@ export {
   typescript,
   threejs,
   meta,
+  icpc,
+  anvil,
   shopify,
+  nsf,
+  purdue,
   starbucks,
   tesla,
   carrent,
