@@ -15,9 +15,9 @@ const Hero = () => {
         </div>
         <div>
           {/* Main Text */}
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h3 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915eff]'>Arnav Arora!</span>
-          </h1>
+          </h3>
           {/* Sub Text */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I specialize in full-stack development, <br className='sm:block hidden'/> algorithm design and data science
