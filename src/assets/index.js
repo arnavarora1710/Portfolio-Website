@@ -8,6 +8,14 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
+import cplusplus from "./tech/cplusplus.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
+import R from "./tech/R.png";
+import matlab from "./tech/matlab.png";
+import pytorch from "./tech/pytorch.png";
+import tensorflow from "./tech/tensorflow.png";
+import firebase from "./tech/firebase.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -67,4 +75,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  cplusplus,
+  python,
+  java,
+  matlab,
+  pytorch,
+  tensorflow,
+  R,
+  firebase
 };

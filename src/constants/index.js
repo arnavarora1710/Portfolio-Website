@@ -4,25 +4,23 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    cplusplus,
     html,
     css,
     reactjs,
-    redux,
-    tailwind,
+    python,
+    java,
     nodejs,
-    mongodb,
+    matlab,
     git,
-    figma,
-    docker,
-    meta,
+    tensorflow,
+    pytorch,
+    R,
+    firebase,
     icpc,
     nsf,
     purdue,
     anvil,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -65,6 +63,22 @@ import {
   
   const technologies = [
     {
+      name: "C++",
+      icon: cplusplus
+    },
+    {
+      name: "Python",
+      icon: python
+    },
+    {
+      name: "java",
+      icon: java,
+    },
+    {
+      name: "MATLAB",
+      icon: matlab,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -77,45 +91,17 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Tensorflow",
+      icon: tensorflow,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    }
   ];
   
   const experiences = [
