@@ -4,6 +4,7 @@ import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import {services} from '../constants';
 import {fadeIn, textVariant} from '../utils/motions.js'
+import {SectionWrapper} from '../hoc';
 
 const ServiceCard = ({index, title, icon}) => {
   return (
@@ -43,7 +44,7 @@ const About = () => {
         I'm Arnav Arora, a passionate and dedicated software developer pursuing a
         Bachelors of Science in Computer Science and Mathematics with a focus on
         Machine Intelligence and Algorithmic Foundations at Purdue University. 
-        Currently maintaining a perfect GPA of 4.0, I am committed to excellence 
+        <br />Currently maintaining a perfect GPA of 4.0, I am committed to excellence 
         in academia, theoretical knowledge and practical applications.
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -56,4 +57,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
