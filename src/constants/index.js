@@ -94,14 +94,14 @@ import {
       name: "Tensorflow",
       icon: tensorflow,
     },
-    // {
-    //   name: "React JS",
-    //   icon: reactjs,
-    // },
-    // {
-    //   name: "Three JS",
-    //   icon: threejs,
-    // }
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    }
   ];
   
   const experiences = [
