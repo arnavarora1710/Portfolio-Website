@@ -1,14 +1,27 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import { BallCanvas } from "./canvas";
-import {motion} from 'framer-motion';
-import {fadeIn, textVariant} from '../utils/motions.js'
-import {styles} from '../styles';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from '../utils/motions.js'
+import { styles } from '../styles';
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
-
 const Tech = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -16,18 +29,18 @@ const Tech = () => {
         <h5 className={`${styles.sectionHeadText} text-center`}>Software Knowledge</h5>
       </motion.div>
       <div className='mt-10 flex flex-row flex-wrap justify-center gap-10'>
-        {technologies.map((technology) => (
+        {technologies.map((technology, index) => (
           <div className='w-28 h-28' key={technology.name}>
-            {window.innerWidth <= 600 && index <= 5 ? (
+            {isSmallScreen && index <= 5 ? (
               <BallCanvas icon={technology.icon} />
-            ) : window.innerWidth > 600 ? (
+            ) : !isSmallScreen ? (
               <BallCanvas icon={technology.icon} />
             ) : null}
           </div>
         ))}
       </div>
     </>
-  )
+  );
 }
 
-export default SectionWrapper(Tech, "")
+export default SectionWrapper(Tech, "");
