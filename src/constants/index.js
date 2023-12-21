@@ -71,7 +71,7 @@ import {
       icon: python
     },
     {
-      name: "java",
+      name: "Java",
       icon: java,
     },
     {

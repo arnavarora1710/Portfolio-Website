@@ -30,7 +30,7 @@ const Tech = () => {
       </motion.div>
       <div className='mt-10 flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology, index) => (
-          <div className='w-28 h-28' key={technology.name}>
+          <div title = {technology.name} className='w-28 h-28' key={technology.name}>
             {isSmallScreen && index <= 4 ? (
               <BallCanvas icon={technology.icon} />
             ) : !isSmallScreen ? (
