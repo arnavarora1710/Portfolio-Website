@@ -31,7 +31,7 @@ const Tech = () => {
       <div className='mt-10 flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology, index) => (
           <div className='w-28 h-28' key={technology.name}>
-            {isSmallScreen && index <= 5 ? (
+            {isSmallScreen && index <= 4 ? (
               <BallCanvas icon={technology.icon} />
             ) : !isSmallScreen ? (
               <BallCanvas icon={technology.icon} />
