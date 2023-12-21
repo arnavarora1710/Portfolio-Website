@@ -78,30 +78,30 @@ import {
       name: "MATLAB",
       icon: matlab,
     },
-    // {
-    //   name: "HTML 5",
-    //   icon: html,
-    // },
-    // {
-    //   name: "CSS 3",
-    //   icon: css,
-    // },
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
     {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "Tensorflow",
-    //   icon: tensorflow,
-    // },
-    // {
-    //   name: "React JS",
-    //   icon: reactjs,
-    // },
-    // {
-    //   name: "Three JS",
-    //   icon: threejs,
-    // }
+    {
+      name: "Tensorflow",
+      icon: tensorflow,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    }
   ];
   
   const experiences = [

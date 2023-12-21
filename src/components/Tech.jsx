@@ -18,7 +18,11 @@ const Tech = () => {
       <div className='mt-10 flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology) => (
           <div className='w-28 h-28' key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+            {window.innerWidth <= 600 && index <= 5 ? (
+              <BallCanvas icon={technology.icon} />
+            ) : window.innerWidth > 600 ? (
+              <BallCanvas icon={technology.icon} />
+            ) : null}
           </div>
         ))}
       </div>
